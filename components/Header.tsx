@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { site } from "@/lib/content";
 import { useObsessionMode } from "./EasterEggs";
@@ -59,6 +60,12 @@ export function Header() {
           <span className="meta hidden sm:inline tabular-nums">
             [{time ?? "--:--"} IST — {site.location}]
           </span>
+          <Link
+            href="/graphics"
+            className="transition-colors duration-200 hover:text-[var(--hot)]"
+          >
+            graphics ↗
+          </Link>
           <a
             href="#contact"
             className="transition-colors duration-200 hover:text-[var(--hot)]"

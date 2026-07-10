@@ -23,6 +23,7 @@ export function useObsessionMode() {
 
     clicks.current = [];
     document.body.dataset.obsession = "true";
+    sessionStorage.setItem("shiftd:obsession-found", "1");
     toast(eggs.obsessionMode);
     setTimeout(() => delete document.body.dataset.obsession, 5000);
   }, []);

@@ -7,6 +7,7 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { CursorDot } from "@/components/CursorDot";
 import { EasterEggs } from "@/components/EasterEggs";
+import { HintToast } from "@/components/HintToast";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
 
       <CursorDot />
       <EasterEggs />
+      <HintToast />
     </>
   );
 }

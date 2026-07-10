@@ -11,10 +11,6 @@ export function Footer() {
         {footer.colophon}
       </p>
 
-      <p className="meta mt-2 text-center font-mono text-[0.6rem] tracking-[0.04em] opacity-60">
-        {footer.hint}
-      </p>
-
       {/* Cropped by the viewport bottom on purpose — the reward for reaching the end. */}
       <div
         aria-label={site.wordmark}

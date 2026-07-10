@@ -44,7 +44,7 @@ export const contact = {
 
 export const footer = {
   thanks: "thanks for scrolling",
-  colophon: "designed & vibe-coded by shifin · kochi · v3",
+  colophon: "designed & vibe-coded by shifin · kochi",
 } as const;
 
 export const eggs = {

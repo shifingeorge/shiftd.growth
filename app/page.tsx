@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { WorkIndex } from "@/components/WorkIndex";
+import { Playground } from "@/components/Playground";
 import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
@@ -21,6 +22,7 @@ export default function Home() {
       <main>
         <Hero />
         <WorkIndex />
+        <Playground />
         <About />
         <Contact />
       </main>

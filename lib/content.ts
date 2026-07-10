@@ -5,7 +5,7 @@ export const site = {
   name: "Shifin George",
   location: "Kochi",
   timezone: "Asia/Kolkata",
-  email: "hello@shiftd.design", // TODO: confirm real address
+  email: "shifiyy03.design@gmail.com",
   availability: "open for freelance + full-time",
 } as const;
 
@@ -35,10 +35,10 @@ export const contact = {
   cta: "say hello",
   copied: "copied — now write it",
   socials: [
-    { label: "Email", href: "mailto:hello@shiftd.design" },
-    { label: "WhatsApp", href: "https://wa.me/918113811372" }, // TODO: confirm number
-    { label: "Figma", href: "https://figma.com/@shiftd" }, // TODO: confirm handle
-    { label: "Medium", href: "https://medium.com/@shifingeorge" }, // TODO: confirm handle
+    { label: "Email", href: "mailto:shifiyy03.design@gmail.com" },
+    { label: "WhatsApp", href: "https://wa.me/917994613019" },
+    { label: "Figma", href: "https://www.figma.com/@shifiyy" },
+    { label: "Medium", href: "https://medium.com/@shif.td" },
   ],
 } as const;
 
@@ -48,7 +48,8 @@ export const footer = {
 } as const;
 
 export const eggs = {
-  consoleNote: "snooping? respect. say hello@shiftd.design — the code is the case study.",
+  consoleNote:
+    "snooping? respect. say shifiyy03.design@gmail.com — the code is the case study.",
   obsessionMode: "you found obsession mode",
   archiveTitle: "the archive",
   archiveNote: "where this came from.",

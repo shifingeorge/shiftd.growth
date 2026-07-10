@@ -17,7 +17,7 @@ export function About() {
 
           <ul className="mt-14">
             {experience.map((role) => (
-              <li key={role.org} className="rule border-t last:border-b">
+              <li key={`${role.role}-${role.org}`} className="rule border-t last:border-b">
                 <div className="group relative overflow-hidden px-2 py-5">
                   <span
                     aria-hidden
@@ -31,8 +31,19 @@ export function About() {
                       <span className="font-display text-lg font-bold tracking-tight transition-colors duration-200 group-hover:text-[var(--flood-text)] sm:text-xl">
                         {role.role}
                         <span className="meta font-sans text-base font-normal transition-colors duration-200 group-hover:text-[var(--flood-text)]/80">
-                          {" "}
-                          — {role.org}
+                          {" — "}
+                          {role.orgHref ? (
+                            <a
+                              href={role.orgHref}
+                              target="_blank"
+                              rel="noreferrer noopener"
+                              className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-current"
+                            >
+                              {role.org} ↗
+                            </a>
+                          ) : (
+                            role.org
+                          )}
                         </span>
                       </span>
                     </div>

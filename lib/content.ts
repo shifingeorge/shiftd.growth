@@ -45,6 +45,7 @@ export const contact = {
 export const footer = {
   thanks: "thanks for scrolling",
   colophon: "designed & vibe-coded by shifin · kochi",
+  hint: "psst — the wordmark rewards obsession. five clicks.",
 } as const;
 
 export const eggs = {

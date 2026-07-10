@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #fafaf8;
+  --color-ink: #191716;
+  --color-ink-soft: #8a8580;
+  --color-red: #be3a26;
+  --color-red-deep: #8f2b1c;
+  --color-flip: #f6f1ea;
+
+  --font-display: var(--font-bricolage), system-ui, sans-serif;
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --ease-quint: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  color-scheme: light;
+
+  /* Interaction colors. Swapped wholesale by obsession mode so hover states
+     never collide with the background they sit on. */
+  --hot: var(--color-red);
+  --flood: var(--color-red);
+  --flood-text: var(--color-flip);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-red);
+  color: var(--color-flip);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-red);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+/* Obsession mode: inverted palette, triggered by 5 rapid wordmark clicks. */
+body[data-obsession="true"] {
+  background: var(--color-red);
+  color: var(--color-flip);
+  --hot: var(--color-ink);
+  --flood: var(--color-ink);
+  --flood-text: var(--color-flip);
+}
+body[data-obsession="true"] ::selection {
+  background: var(--color-flip);
+  color: var(--color-red);
+}
+body[data-obsession="true"] .rule {
+  border-color: rgb(246 241 234 / 0.28);
+}
+body[data-obsession="true"] .meta {
+  color: rgb(246 241 234 / 0.7);
+}
+
+.rule {
+  border-color: rgb(25 23 22 / 0.12);
+}
+
+.meta {
+  color: var(--color-ink-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

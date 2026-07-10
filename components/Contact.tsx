@@ -25,14 +25,14 @@ export function Contact() {
         Contact
       </p>
 
-      <h2 className="font-display mt-8 max-w-3xl text-[clamp(1.75rem,4.5vw,3rem)] font-extrabold leading-[1.08] tracking-[-0.02em]">
+      <h2 className="font-display mt-8 max-w-3xl text-[clamp(1.3rem,3vw,1.9rem)] font-bold leading-[1.15] tracking-tight">
         {contact.headline}
       </h2>
 
       <button
         type="button"
         onClick={copyEmail}
-        className="font-display mt-8 inline-flex items-center gap-3 text-[clamp(1.5rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] transition-colors duration-200 hover:text-[var(--hot)]"
+        className="font-display mt-8 inline-flex items-center gap-3 text-[clamp(1.1rem,2.2vw,1.6rem)] font-bold tracking-tight transition-colors duration-200 hover:text-[var(--hot)]"
       >
         {copied ? (
           <span className="font-mono text-[var(--hot)] text-[clamp(0.85rem,1.6vw,1.1rem)] uppercase tracking-[0.08em]">

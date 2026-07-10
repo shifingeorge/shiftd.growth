@@ -77,7 +77,7 @@ export function GlobeGallery() {
           ← shiftd.design
         </Link>
         <div className="flex flex-wrap items-baseline justify-between gap-3">
-          <h1 className="font-display text-[clamp(2rem,5vw,3.25rem)] font-bold leading-tight tracking-[-0.02em]">
+          <h1 className="font-display text-[clamp(1.4rem,3vw,2.2rem)] font-bold leading-tight tracking-tight">
             the wall, bent into a sphere.
           </h1>
           <span className="meta font-mono text-[0.68rem] uppercase tracking-[0.08em]">

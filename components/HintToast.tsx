@@ -67,7 +67,7 @@ export function HintToast() {
       type="button"
       onClick={handleDismiss}
       role="status"
-      className={`fixed bottom-6 left-1/2 z-50 -translate-x-1/2 border border-current px-4 py-2 font-mono text-[0.65rem] uppercase tracking-[0.06em] transition-[transform,opacity] duration-[400ms] ease-quint motion-reduce:duration-300 motion-reduce:transition-opacity ${
+      className={`hint-toast fixed bottom-6 left-1/2 z-50 -translate-x-1/2 border border-current bg-[var(--color-paper)] px-4 py-2 font-mono text-[0.65rem] uppercase tracking-[0.06em] transition-[transform,opacity] duration-[400ms] ease-quint motion-reduce:duration-300 motion-reduce:transition-opacity ${
         visible
           ? "translate-y-0 opacity-100"
           : "translate-y-4 opacity-0 motion-reduce:translate-y-0"

@@ -14,7 +14,7 @@ export function Footer() {
       {/* Cropped by the viewport bottom on purpose — the reward for reaching the end. */}
       <div
         aria-label={site.wordmark}
-        className="font-display mt-8 flex justify-center whitespace-nowrap text-[clamp(2.6rem,13vw,12rem)] font-extrabold leading-[0.82] tracking-[-0.04em]"
+        className="font-display mt-8 flex justify-center whitespace-nowrap text-[clamp(2rem,9vw,7.5rem)] font-bold leading-[0.85] tracking-tight"
         style={{ marginBottom: "-0.28em" }}
       >
         {site.wordmark.split("").map((char, i) => (

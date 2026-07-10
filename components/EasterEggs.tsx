@@ -86,7 +86,7 @@ function ArchiveOverlay() {
         <p className="meta font-mono text-[0.72rem] uppercase tracking-[0.08em]">
           {eggs.archiveTitle}
         </p>
-        <p className="font-display mt-3 text-3xl font-extrabold tracking-tight">
+        <p className="font-display mt-3 text-xl font-bold tracking-tight">
           {eggs.archiveNote}
         </p>
 

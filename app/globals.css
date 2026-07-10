@@ -8,7 +8,7 @@
   --color-red-deep: #8f2b1c;
   --color-flip: #f6f1ea;
 
-  --font-display: var(--font-bricolage), system-ui, sans-serif;
+  --font-display: var(--font-geist-mono), ui-monospace, monospace;
   --font-sans: var(--font-geist-sans), system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 
@@ -66,6 +66,9 @@ body[data-obsession="true"] .rule {
 }
 body[data-obsession="true"] .meta {
   color: rgb(246 241 234 / 0.7);
+}
+body[data-obsession="true"] .hint-toast {
+  background: var(--color-red);
 }
 
 .rule {

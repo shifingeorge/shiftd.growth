@@ -78,7 +78,7 @@ function WorkRow({
           className="absolute inset-0 origin-left scale-x-0 bg-[var(--flood)] transition-transform duration-[350ms] ease-quint group-hover:origin-left group-hover:scale-x-100 group-focus-visible:origin-left group-focus-visible:scale-x-100"
         />
 
-        <span className="relative font-display text-[clamp(1.5rem,3.5vw,2.75rem)] font-bold leading-tight tracking-[-0.015em] transition-colors duration-200 group-hover:text-[var(--flood-text)] group-focus-visible:text-[var(--flood-text)]">
+        <span className="relative font-display text-[clamp(1.4rem,3vw,2.2rem)] font-bold leading-tight tracking-tight transition-colors duration-200 group-hover:text-[var(--flood-text)] group-focus-visible:text-[var(--flood-text)]">
           {project.title}
         </span>
 

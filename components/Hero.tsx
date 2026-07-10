@@ -48,7 +48,7 @@ export function Hero() {
     <section className="mx-auto flex min-h-svh max-w-6xl flex-col justify-center px-5 pt-28 pb-16 sm:px-8 lg:px-16">
       <h1
         ref={headlineRef}
-        className="font-display max-w-5xl text-[clamp(2.5rem,7vw,5.5rem)] font-extrabold leading-[1.02] tracking-[-0.02em]"
+        className="font-display max-w-5xl text-[clamp(1.6rem,4.5vw,3rem)] font-bold leading-[1.05] tracking-tight"
       >
         {hero.headline.map((word, i) => (
           <span
@@ -60,6 +60,9 @@ export function Hero() {
             {i < hero.headline.length - 1 ? " " : ""}
           </span>
         ))}
+        <span aria-hidden className="ml-1 inline-block animate-[bob_1.8s_ease-in-out_infinite] text-[var(--hot)]">
+          ▮
+        </span>
       </h1>
 
       <p className="mt-8 max-w-[34rem] text-base leading-relaxed">

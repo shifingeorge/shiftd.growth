@@ -22,17 +22,17 @@ export function Contact() {
       className="mx-auto max-w-6xl px-5 pb-[clamp(6rem,15vh,10rem)] sm:px-8 lg:px-16"
     >
       <p className="meta font-mono text-[0.72rem] uppercase tracking-[0.08em]">
-        Contact
+        [ contact ]
       </p>
 
-      <h2 className="font-display mt-8 max-w-3xl text-[clamp(1.3rem,3vw,1.9rem)] font-bold leading-[1.15] tracking-tight">
+      <h2 className="font-display mt-4 max-w-3xl text-[clamp(1.3rem,3vw,1.9rem)] font-bold leading-[1.15] tracking-tight">
         {contact.headline}
       </h2>
 
       <button
         type="button"
         onClick={copyEmail}
-        className="font-display mt-8 inline-flex items-center gap-3 text-[clamp(1.1rem,2.2vw,1.6rem)] font-bold tracking-tight transition-colors duration-200 hover:text-[var(--hot)]"
+        className="font-display mt-4 inline-flex items-center gap-3 text-[clamp(1.1rem,2.2vw,1.6rem)] font-bold tracking-tight transition-colors duration-200 hover:text-[var(--hot)]"
       >
         {copied ? (
           <span className="font-mono text-[var(--hot)] text-[clamp(0.85rem,1.6vw,1.1rem)] uppercase tracking-[0.08em]">
@@ -48,7 +48,7 @@ export function Contact() {
         )}
       </button>
 
-      <p className="meta mt-3 font-mono text-[0.7rem] tracking-[0.04em]">
+      <p className="meta mt-1 font-mono text-[0.7rem] tracking-[0.04em]">
         or just{" "}
         <a
           href={`mailto:${site.email}`}

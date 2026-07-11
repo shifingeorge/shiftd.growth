@@ -136,7 +136,7 @@ export function WorkIndex() {
       id="work"
       className="mx-auto max-w-6xl px-5 py-[clamp(6rem,15vh,10rem)] sm:px-8 lg:px-16"
     >
-      <h2 className="meta mb-10 font-mono text-[0.72rem] uppercase tracking-[0.08em]">
+      <h2 className="meta mb-2 font-mono text-[0.72rem] uppercase tracking-[0.08em]">
         Selected work [{String(projects.length).padStart(2, "0")}]
       </h2>
 

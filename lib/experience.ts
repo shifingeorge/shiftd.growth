@@ -13,14 +13,14 @@ export const experience: Role[] = [
     role: "Operations Manager",
     org: "Smashed Burgers & Co",
     orgHref: "https://www.linkedin.com/company/smashed-burgers-and-co/",
-    period: "May 2026 —",
+    period: "May 2026 — [present]",
     note: "Running kitchens taught me more about systems design than any Figma file.",
   },
   {
     label: "NOW",
     role: "UI Designer, freelance",
-    org: "shiftd.design",
-    period: "Feb 2025 —",
+    org: "shiftd.growth",
+    period: "Feb 2025 — [present]",
     note: "Still taking on freelance work.",
   },
   {

@@ -8,7 +8,7 @@ export type PlaygroundProject = {
 
 export const playground: PlaygroundProject[] = [
   {
-    title: "kukku",
+    title: "kukku weds nizma",
     href: "https://nizmakukku.vercel.app/",
     tag: "wedding gift",
     story: "built for my friend nizma's wedding — because a card felt lazy",

@@ -74,7 +74,7 @@ export function GlobeGallery() {
           href="/"
           className="w-fit font-mono text-[0.72rem] uppercase tracking-[0.08em] text-ink-soft transition-colors duration-200 hover:text-[var(--hot)]"
         >
-          ← shiftd.design
+          ← shiftd.growth
         </Link>
         <div className="flex flex-wrap items-baseline justify-between gap-3">
           <h1 className="font-display text-[clamp(1.4rem,3vw,2.2rem)] font-bold leading-tight tracking-tight">

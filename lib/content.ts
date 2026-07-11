@@ -1,12 +1,12 @@
 // Single source of truth for all copy. Swap values here when final details land.
 
 export const site = {
-  wordmark: "shiftd.design",
+  wordmark: "shiftd.growth",
   name: "Shifin George",
   location: "Kochi",
   timezone: "Asia/Kolkata",
   email: "shifiyy03.design@gmail.com",
-  availability: "open for freelance + full-time",
+  availability: "open for freelance",
 } as const;
 
 export const hero = {
@@ -36,6 +36,7 @@ export const contact = {
   copied: "copied — now write it",
   socials: [
     { label: "Email", href: "mailto:shifiyy03.design@gmail.com" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/shifiyy" },
     { label: "WhatsApp", href: "https://wa.me/917994613019" },
     { label: "Figma", href: "https://www.figma.com/@shifiyy" },
     { label: "Medium", href: "https://medium.com/@shif.td" },

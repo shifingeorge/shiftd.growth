@@ -60,9 +60,6 @@ export function Hero() {
             {i < hero.headline.length - 1 ? " " : ""}
           </span>
         ))}
-        <span aria-hidden className="ml-1 inline-block animate-[bob_1.8s_ease-in-out_infinite] text-[var(--hot)]">
-          ▮
-        </span>
       </h1>
 
       <p className="mt-8 max-w-[34rem] text-base leading-relaxed">

@@ -6,14 +6,14 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://shiftd.design"),
-  title: "shiftd.design — Shifin George",
+  title: "shiftd.growth — Shifin George",
   description:
     "Shifin George — part designer, part vibe coder, full-time problem untangler. Selected work, case studies, and a standing invitation to say hello.",
   openGraph: {
-    title: "shiftd.design — Shifin George",
+    title: "shiftd.growth — Shifin George",
     description: "They call it design. I call it organized obsession.",
     url: "https://shiftd.design",
-    siteName: "shiftd.design",
+    siteName: "shiftd.growth",
     type: "website",
   },
 };

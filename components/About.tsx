@@ -7,9 +7,9 @@ export function About() {
       id="about"
       className="mx-auto max-w-6xl px-5 pb-[clamp(6rem,15vh,10rem)] sm:px-8 lg:px-16"
     >
-      <div className="grid gap-10 lg:grid-cols-[10rem_1fr] lg:gap-16">
+      <div className="grid gap-5 lg:grid-cols-[10rem_1fr] lg:gap-16">
         <h2 className="meta font-mono text-[0.72rem] uppercase tracking-[0.08em] lg:pt-2">
-          About
+          [ about ]
         </h2>
 
         <div>
@@ -23,33 +23,35 @@ export function About() {
                     aria-hidden
                     className="absolute inset-0 origin-left scale-x-0 bg-[var(--flood)] transition-transform duration-[350ms] ease-quint group-hover:scale-x-100"
                   />
-                  <div className="relative flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8">
-                    <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-5">
-                      <span className="meta w-16 shrink-0 font-mono text-[0.7rem] uppercase tracking-[0.08em] transition-colors duration-200 group-hover:text-[var(--flood-text)]/70">
-                        {role.label}
-                      </span>
-                      <span className="font-display text-lg font-bold tracking-tight transition-colors duration-200 group-hover:text-[var(--flood-text)] sm:text-xl">
+                  <div className="relative flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-5">
+                    <span className="meta w-16 shrink-0 font-mono text-[0.7rem] uppercase tracking-[0.08em] transition-colors duration-200 group-hover:text-[var(--flood-text)]/70">
+                      {role.label}
+                    </span>
+
+                    <div className="flex flex-1 flex-col gap-1 sm:flex-row sm:flex-wrap sm:items-baseline sm:justify-between sm:gap-x-8 sm:gap-y-1">
+                      <span className="order-1 font-display text-lg font-bold tracking-tight transition-colors duration-200 group-hover:text-[var(--flood-text)] sm:text-xl">
                         {role.role}
-                        <span className="meta font-sans text-base font-normal transition-colors duration-200 group-hover:text-[var(--flood-text)]/80">
-                          {" — "}
-                          {role.orgHref ? (
-                            <a
-                              href={role.orgHref}
-                              target="_blank"
-                              rel="noreferrer noopener"
-                              className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-current"
-                            >
-                              {role.org} ↗
-                            </a>
-                          ) : (
-                            role.org
-                          )}
-                        </span>
+                      </span>
+
+                      <span className="meta order-3 shrink-0 font-mono text-[0.7rem] tabular-nums tracking-[0.08em] transition-colors duration-200 group-hover:text-[var(--flood-text)]/70 sm:order-2">
+                        {role.period}
+                      </span>
+
+                      <span className="meta order-2 font-mono text-[0.7rem] tracking-[0.04em] transition-colors duration-200 group-hover:text-[var(--flood-text)]/80 sm:order-3 sm:basis-full">
+                        {role.orgHref ? (
+                          <a
+                            href={role.orgHref}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-current"
+                          >
+                            {role.org} ↗
+                          </a>
+                        ) : (
+                          role.org
+                        )}
                       </span>
                     </div>
-                    <span className="meta shrink-0 font-mono text-[0.7rem] tabular-nums tracking-[0.08em] transition-colors duration-200 group-hover:text-[var(--flood-text)]/70">
-                      {role.period}
-                    </span>
                   </div>
 
                   {role.note && (

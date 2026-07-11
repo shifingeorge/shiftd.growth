@@ -17,7 +17,7 @@ export function Playground() {
       id="playground"
       className="mx-auto max-w-6xl px-5 py-[clamp(6rem,15vh,10rem)] sm:px-8 lg:px-16"
     >
-      <div className="mb-14">
+      <div className="mb-8">
         <h2 className="meta mb-4 font-mono text-[0.72rem] uppercase tracking-[0.08em]">
           [ playground ]
         </h2>
@@ -37,7 +37,7 @@ export function Playground() {
               target="_blank"
               rel="noreferrer"
               style={rotate ? { transform: `rotate(${TILTS[i % TILTS.length]})` } : undefined}
-              className="group block border border-transparent p-6 transition-[transform,border-color] duration-[350ms] ease-quint hover:rotate-0 hover:border-[var(--hot)] focus-visible:rotate-0 focus-visible:border-[var(--hot)] sm:p-8"
+              className="group block border border-transparent px-0 py-6 sm:p-8 transition-[transform,border-color] duration-[350ms] ease-quint hover:rotate-0 hover:border-[var(--hot)] focus-visible:rotate-0 focus-visible:border-[var(--hot)]"
             >
               <div className="mb-4 flex items-center justify-between gap-3 font-mono text-[0.7rem] uppercase tracking-[0.08em]">
                 <span className="meta">{p.tag}</span>
